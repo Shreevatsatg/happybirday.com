@@ -121,7 +121,7 @@ const App = () => {
             </div>
             <div className="order-1 md:order-2">
               <div className="relative group/img">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500 h-150 w-100"></div>
                 <img src="/dark.jpg" alt="Get Reminded of Birthdays" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-blue-500/50  h-150 w-75" />
               </div>
             </div>
@@ -130,7 +130,7 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mt-24">
             <div>
               <div className="relative group/img">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500 h-150 w-100 h-150 w-100"></div>
                 <img src="/addbirthday.jpg" alt="Add Birthday" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-green-500/50 h-150 w-75" />
               </div>
             </div>
@@ -179,7 +179,7 @@ const App = () => {
             </div>
             <div className="order-1 md:order-2">
               <div className="relative group/img">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500 h-150 w-100"></div>
                 <img src="/withwish.jpg" alt="AI Wish Generator" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-purple-500/50 h-150 w-75" />
               </div>
             </div>
@@ -188,7 +188,7 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mt-24">
             <div>
               <div className="relative group/img">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500 h-150 w-100"></div>
                 <img src="/gift.jpg" alt="AI Gift Suggestion" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-indigo-500/50  h-150 w-75" />
               </div>
             </div>
@@ -237,7 +237,7 @@ const App = () => {
             </div>
             <div className="order-1 md:order-2">
               <div className="relative group/img">
-                <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500 h-150 w-100"></div>
                 <img src="/notifications.jpg" alt="Personalize Notifications" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-orange-500/50 h-150 w-75" />
               </div>
             </div>

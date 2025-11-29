@@ -4,6 +4,7 @@ import { Calendar, Sparkles, Users, Palette, Wifi, Bell, Gift, Heart, Zap, Downl
 const App = () => {
   const [lastYPos, setLastYPos] = useState(0);
   const [shouldShowHeader, setShouldShowHeader] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -32,9 +33,9 @@ const App = () => {
             </div>
             <span className="text-2xl font-bold text-[#333333]">happybirday</span>
           </div>
-          <button className="px-6 py-2.5 bg-[#47A3F3] text-white rounded-lg font-medium hover:bg-[#3B8FD9] transition-colors duration-200 flex items-center space-x-2">
-            <Download className="w-4 h-4" />
-            <span>Download</span>
+          <button onClick={() => setModalOpen(true)} className="px-6 py-2.5 bg-[#47A3F3] text-white rounded-lg font-medium hover:bg-[#3B8FD9] transition-colors duration-200 flex items-center space-x-2">
+            <Bell className="w-4 h-4" />
+            <span>Notify Me</span>
           </button>
         </div>
       </header>
@@ -56,12 +57,12 @@ const App = () => {
               forget to celebrate the people who matter most.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-              <button className="px-8 py-4 bg-[#47A3F3] text-white rounded-lg font-semibold text-lg hover:bg-[#3B8FD9] transition-all duration-200 flex items-center space-x-2 shadow-lg">
-                <Download className="w-5 h-5" />
-                <span>Download for Free</span>
+              <button onClick={() => setModalOpen(true)} className="px-8 py-4 bg-[#47A3F3] text-white rounded-lg font-semibold text-lg hover:bg-[#3B8FD9] transition-all duration-200 flex items-center space-x-2 shadow-lg">
+                <Bell className="w-5 h-5" />
+                <span>Notify Me on Launch</span>
               </button>
             </div>
-            <p className="text-sm text-[#666666]">Available for iOS and Android • No subscription required</p>
+            <p className="text-sm text-[#666666]">Coming soon for iOS and Android!</p>
           </div>
         </div>
       </section>
@@ -83,7 +84,7 @@ const App = () => {
       {/* Image Showcase Section */}
       <section className="py-20 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1">
               <h3 className="text-3xl font-bold mb-4 text-[#333333]">Calendar View & Reminders</h3>
               <p className="text-[#666666] leading-relaxed mb-6">
@@ -222,11 +223,11 @@ const App = () => {
             Join thousands of users who never miss a birthday. Download HappyBirday today and start 
             celebrating the people who matter most with thoughtful gifts and heartfelt wishes.
           </p>
-          <button className="px-10 py-5 bg-[#47A3F3] text-white rounded-lg font-semibold text-lg hover:bg-[#3B8FD9] transition-all duration-200 shadow-lg flex items-center space-x-2 mx-auto">
-            <Download className="w-5 h-5" />
-            <span>Download Now - It's Free</span>
+          <button onClick={() => setModalOpen(true)} className="px-10 py-5 bg-[#47A3F3] text-white rounded-lg font-semibold text-lg hover:bg-[#3B8FD9] transition-all duration-200 shadow-lg flex items-center space-x-2 mx-auto">
+            <Bell className="w-5 h-5" />
+            <span>Join the Waitlist</span>
           </button>
-          <p className="mt-6 text-sm text-[#666666]">No credit card required • No subscriptions • No ads</p>
+          <p className="mt-6 text-sm text-[#666666]">Be the first to know when we launch!</p>
         </div>
       </section>
 
@@ -254,6 +255,35 @@ const App = () => {
           </div>
         </div>
       </footer>
+
+      {/* Modal */}
+      {modalOpen && (
+        <div className="fixed inset-0 bg-transparent bg-opacity-50 backdrop-filter backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md mx-4 relative">
+            <button 
+              onClick={() => setModalOpen(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 className="text-2xl font-bold mb-4">Join the Waitlist</h3>
+            <p className="text-gray-600 mb-6">Be the first to know when HappyBirday launches. Enter your email below to get notified.</p>
+            <form>
+              <input 
+                type="email" 
+                placeholder="Enter your email" 
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-[#47A3F3]"
+              />
+              <button 
+                type="submit"
+                className="w-full px-4 py-3 bg-[#47A3F3] text-white rounded-lg font-semibold hover:bg-[#3B8FD9] transition-colors duration-200"
+              >
+                Notify Me
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -100,29 +100,87 @@ const App = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="order-2 md:order-1 space-y-6">
-              <h3 className="text-4xl font-bold bg-gradient-to-r from-slate-900 to-blue-900 bg-clip-text text-transparent">Calendar View & Reminders</h3>
+              <h3 className="text-4xl font-bold bg-gradient-to-r from-slate-900 to-blue-900 bg-clip-text text-transparent">Get Reminded of Birthdays</h3>
               <p className="text-slate-600 leading-relaxed text-lg">
-                Visualize all upcoming birthdays in a clean, intuitive calendar. Set customizable reminders to ensure you never miss a special day.
+                Never miss a birthday again. Get timely reminders for all your important people.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
-                  <span className="text-slate-700">Monthly and yearly calendar views</span>
+                  <span className="text-slate-700">Timely birthday notifications</span>
                 </li>
                 <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
-                  <span className="text-slate-700">Customizable reminder notifications</span>
+                  <span className="text-slate-700">See all birthdays in one place</span>
                 </li>
                 <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
-                  <span className="text-slate-700">Easy-to-see upcoming birthday list</span>
+                  <span className="text-slate-700">Plan ahead with calendar view</span>
                 </li>
               </ul>
             </div>
             <div className="order-1 md:order-2">
               <div className="relative group/img">
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
-                <img src="/calendarmonth.jpg" alt="Calendar View" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-blue-500/50  h-150 w-75" />
+                <img src="/dark.jpg" alt="Get Reminded of Birthdays" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-blue-500/50  h-150 w-75" />
+              </div>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mt-24">
+            <div>
+              <div className="relative group/img">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
+                <img src="/addbirthday.jpg" alt="Add Birthday" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-green-500/50 h-150 w-75" />
+              </div>
+            </div>
+            <div className="space-y-6">
+              <h3 className="text-4xl font-bold bg-gradient-to-r from-slate-900 to-green-900 bg-clip-text text-transparent">Add Birthdays Easily</h3>
+              <p className="text-slate-600 leading-relaxed text-lg">
+                Quickly add birthdays manually or import them from your contacts. Connect your contact list to keep everything in sync and organized.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
+                  <span className="text-slate-700">Manual birthday entry</span>
+                </li>
+                <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
+                  <span className="text-slate-700">Import from phone contacts</span>
+                </li>
+                <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
+                  <span className="text-slate-700">Connect and sync contacts</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mt-24">
+            <div className="order-2 md:order-1 space-y-6">
+              <h3 className="text-4xl font-bold bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">AI Wish Generator</h3>
+              <p className="text-slate-600 leading-relaxed text-lg">
+                Craft heartfelt birthday wishes with AI assistance. Whether you want something funny, sentimental, or professional, our AI helps you create the perfect message.
+              </p>
+              <ul className="space-y-4">
+                <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
+                  <span className="text-slate-700">Generate wishes: funny, heartfelt, or professional</span>
+                </li>
+                <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
+                  <span className="text-slate-700">Craft personalized birthday messages</span>
+                </li>
+                <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
+                  <span className="text-slate-700">Ensures your message resonates</span>
+                </li>
+              </ul>
+            </div>
+            <div className="order-1 md:order-2">
+              <div className="relative group/img">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
+                <img src="/withwish.jpg" alt="AI Wish Generator" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-purple-500/50 h-150 w-75" />
               </div>
             </div>
           </div>
@@ -158,29 +216,29 @@ const App = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mt-24">
             <div className="order-2 md:order-1 space-y-6">
-              <h3 className="text-4xl font-bold bg-gradient-to-r from-slate-900 to-purple-900 bg-clip-text text-transparent">AI Wish Generator</h3>
+              <h3 className="text-4xl font-bold bg-gradient-to-r from-slate-900 to-orange-900 bg-clip-text text-transparent">Personalize Notifications</h3>
               <p className="text-slate-600 leading-relaxed text-lg">
-                Craft heartfelt birthday wishes with AI assistance. Whether you want something funny, sentimental, or professional, our AI helps you create the perfect message.
+                Customize when you get reminders. Whether it's a week before, a day before, or on the birthday itself, you're in control.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
-                  <span className="text-slate-700">Generate wishes: funny, heartfelt, or professional</span>
+                  <span className="text-slate-700">Flexible reminder scheduling</span>
                 </li>
                 <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
-                  <span className="text-slate-700">Craft personalized birthday messages</span>
+                  <span className="text-slate-700">Multiple notification options</span>
                 </li>
                 <li className="flex items-center group/item hover:translate-x-2 transition-transform duration-300">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0 group-hover/item:scale-110 transition-transform duration-300" />
-                  <span className="text-slate-700">Ensures your message resonates</span>
+                  <span className="text-slate-700">Never miss a celebration</span>
                 </li>
               </ul>
             </div>
             <div className="order-1 md:order-2">
               <div className="relative group/img">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
-                <img src="/withwish.jpg" alt="AI Wish Generator" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-purple-500/50 h-150 w-75" />
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl blur-2xl opacity-20 group-hover/img:opacity-30 transition-opacity duration-500"></div>
+                <img src="/notifications.jpg" alt="Personalize Notifications" className="rounded-2xl shadow-2xl relative z-10 transition-all duration-500 group-hover/img:scale-105 group-hover/img:shadow-orange-500/50 h-150 w-75" />
               </div>
             </div>
           </div>
